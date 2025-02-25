@@ -42,7 +42,8 @@ INSTALLED_APPS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://imvickykumar999.online",  # Your React frontend URL
+    "https://imvickykumar999.online",
+    "https://django-react-xi.vercel.app",
 ]
 
 CORS_ALLOW_ALL_ORIGINS = False  # Set to False for security
