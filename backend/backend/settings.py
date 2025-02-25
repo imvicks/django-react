@@ -38,9 +38,18 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     'rest_framework',
     'api',
+    'corsheaders',
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    "https://django-react-xi.vercel.app",  # Your React frontend URL
+]
+
+CORS_ALLOW_ALL_ORIGINS = False  # Set to False for security
+CORS_ALLOW_CREDENTIALS = True  # Allow credentials if needed
+
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
